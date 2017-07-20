@@ -17,3 +17,5 @@
 <li>安裝Chrome 瀏覽器</li>
 <li>在Chrome安裝從線上應用程式商店安裝Postman</li>
 </ul>
+教材下載
+https://jet-pega.github.io/CRM_WEBAPI/CRM_WEBAPI/
