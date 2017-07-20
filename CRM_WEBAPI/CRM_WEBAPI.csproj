@@ -195,6 +195,7 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="index.html" />
     <Content Include="MyHtmlTest\Default.html" />
     <Content Include="MyHtmlTest\Test04.html" />
     <Content Include="MyHtmlTest\Test03.html" />
