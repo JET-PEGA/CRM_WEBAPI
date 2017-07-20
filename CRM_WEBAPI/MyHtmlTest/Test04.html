@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test04 (各類型資料上傳測試)</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <p>Test04 (各類型資料上傳測試)</p>
+    <form action="http://localhost:3958/Test04/PostFiles" method="post" enctype="multipart/form-data">
+        <button type="button" id="ajaxButton">Ajax Post</button>
+        <textarea rows="3" id="message" ></textarea>
+        <br><br>
+        <input type="file" name="file" />
+        <button type="submit">FileUpload (上傳控制項一定要設name)</button>
+
+        <script type="text/javascript">
+            $(function () {
+                $("#ajaxButton").click(function (event) {
+                    var userInfo = {
+                        "Name": "Eric_Wu",
+                        "ID": "LA1000384",
+                        "Password": "pega"
+                    }
+                    $.ajax({
+                        type: "POST",
+                        url: "http://localhost:3958/Test04/PostJson",
+                        data: userInfo,
+                        success: function (message) {
+                            $("#message").text(message.Name);
+                        },
+                        error: function () {
+                            alert("發生錯誤");
+                        }
+                    });
+                });
+            });
+
+
+
+
+        </script>
+    </form>
+</body>
+</html>
